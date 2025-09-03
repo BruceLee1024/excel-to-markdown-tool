@@ -1,11 +1,15 @@
 * {
     box-sizing: border-box;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+<<<<<<< HEAD
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-attachment: fixed;
     color: #333;
@@ -75,6 +79,47 @@ body {
     border-bottom: 1px solid #e8ecef;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
+=======
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.upload-section {
+    padding: 40px 30px;
+    border-bottom: 1px solid #eee;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .file-input-wrapper {
@@ -95,6 +140,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding: 35px 20px;
     border: 2px dashed #d1d9e0;
     border-radius: 16px;
@@ -104,10 +150,19 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+=======
+    padding: 40px 20px;
+    border: 2px dashed #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .file-input-label:hover {
     border-color: #667eea;
+<<<<<<< HEAD
     background: linear-gradient(135deg, #f0f4ff 0%, #e8f2ff 100%);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
@@ -126,11 +181,15 @@ body {
 
 .file-input-label:hover::before {
     left: 100%;
+=======
+    background-color: #f0f4ff;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .upload-icon {
     width: 48px;
     height: 48px;
+<<<<<<< HEAD
     margin-bottom: 15px;
     color: #667eea;
     stroke-width: 1.5;
@@ -161,6 +220,28 @@ body {
 .file-list {
     margin: 15px 0;
     min-height: 30px;
+=======
+    margin-bottom: 16px;
+    color: #667eea;
+    stroke-width: 1.5;
+}
+
+.file-input-label span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.file-input-label small {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.file-list {
+    margin: 20px 0;
+    min-height: 40px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .file-item {
@@ -169,6 +250,7 @@ body {
     justify-content: space-between;
     padding: 12px 16px;
     margin-bottom: 8px;
+<<<<<<< HEAD
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-radius: 10px;
     border-left: 4px solid #667eea;
@@ -183,6 +265,11 @@ body {
     transform: translateX(4px);
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.12);
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+=======
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .file-info {
@@ -192,9 +279,15 @@ body {
 }
 
 .file-icon {
+<<<<<<< HEAD
     width: 16px;
     height: 16px;
     margin-right: 8px;
+=======
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
     color: #28a745;
 }
 
@@ -205,8 +298,13 @@ body {
 
 .file-size {
     color: #666;
+<<<<<<< HEAD
     font-size: 0.8rem;
     margin-left: 6px;
+=======
+    font-size: 0.9rem;
+    margin-left: 8px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .remove-file {
@@ -214,8 +312,13 @@ body {
     border: none;
     color: #dc3545;
     cursor: pointer;
+<<<<<<< HEAD
     padding: 2px;
     border-radius: 3px;
+=======
+    padding: 4px;
+    border-radius: 4px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
     transition: background-color 0.2s;
 }
 
@@ -223,6 +326,7 @@ body {
     background-color: #f8d7da;
 }
 
+<<<<<<< HEAD
 .convert-options {
     display: flex;
     flex-direction: column;
@@ -274,6 +378,40 @@ body {
     transform: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     opacity: 0.7;
+=======
+/* 转换选项 */
+.convert-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.convert-btn {
+    flex: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.convert-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.convert-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 #selectColumnsBtn {
@@ -281,7 +419,11 @@ body {
 }
 
 #selectColumnsBtn:hover:not(:disabled) {
+<<<<<<< HEAD
     box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+=======
+    box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 #mergeExcelBtn {
@@ -289,6 +431,7 @@ body {
 }
 
 #mergeExcelBtn:hover:not(:disabled) {
+<<<<<<< HEAD
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
 }
 
@@ -298,10 +441,112 @@ body {
 
 #mergeToCsvBtn:hover:not(:disabled) {
     box-shadow: 0 4px 15px rgba(67, 233, 123, 0.4);
+=======
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+}
+
+.output-section {
+    padding: 30px;
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.output-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.action-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2;
+}
+
+.copy-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.copy-btn:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.export-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.export-btn:hover:not(:disabled) {
+    background-color: #138496;
+}
+
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    background-color: #fafafa;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    width: 0%;
+    transition: width 0.3s ease;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 /* 列选择器样式 */
 .column-selector {
+<<<<<<< HEAD
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     padding: 25px;
     margin: 0 30px 30px 30px;
@@ -323,6 +568,26 @@ body {
 .select-all-container {
     margin-bottom: 12px;
     padding-bottom: 12px;
+=======
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.column-selector h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.select-all-container {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
     border-bottom: 1px solid #eee;
 }
 
@@ -332,6 +597,7 @@ body {
     font-weight: 500;
     color: #555;
     cursor: pointer;
+<<<<<<< HEAD
     font-size: 0.9rem;
 }
 
@@ -348,6 +614,22 @@ body {
     padding: 10px;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+=======
+}
+
+.select-all-container input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.column-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fafafa;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .column-item {
@@ -355,6 +637,7 @@ body {
     align-items: center;
     padding: 8px 12px;
     margin: 4px 0;
+<<<<<<< HEAD
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-radius: 6px;
     border: 1px solid #e8ecef;
@@ -368,6 +651,17 @@ body {
     border-color: #667eea;
     transform: translateX(2px);
     box-shadow: 0 3px 8px rgba(102, 126, 234, 0.15);
+=======
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.column-item:hover {
+    background: #f0f8ff;
+    border-color: #667eea;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .column-item label {
@@ -379,8 +673,13 @@ body {
 }
 
 .column-item input[type="checkbox"] {
+<<<<<<< HEAD
     margin-right: 8px;
     transform: scale(1.0);
+=======
+    margin-right: 10px;
+    transform: scale(1.1);
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 .column-name {
@@ -390,12 +689,21 @@ body {
 
 .column-preview {
     margin-left: auto;
+<<<<<<< HEAD
     font-size: 0.75rem;
     color: #666;
     background: #f0f0f0;
     padding: 1px 6px;
     border-radius: 3px;
     max-width: 100px;
+=======
+    font-size: 12px;
+    color: #666;
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    max-width: 150px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -403,14 +711,20 @@ body {
 
 .column-actions {
     display: flex;
+<<<<<<< HEAD
     gap: 8px;
     margin-top: 15px;
+=======
+    gap: 10px;
+    margin-top: 20px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 #applyColumnFilter {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     flex: 1;
+<<<<<<< HEAD
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
@@ -423,12 +737,20 @@ body {
 #applyColumnFilter:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+=======
+}
+
+#applyColumnFilter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 #cancelColumnFilter {
     background: #f5f5f5;
     color: #666;
     flex: 1;
+<<<<<<< HEAD
     padding: 8px 12px;
     border: none;
     border-radius: 4px;
@@ -436,10 +758,13 @@ body {
     font-size: 0.85rem;
     font-weight: 500;
     transition: all 0.2s ease;
+=======
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
 }
 
 #cancelColumnFilter:hover {
     background: #e0e0e0;
+<<<<<<< HEAD
     transform: translateY(-1px);
 }
 
@@ -629,11 +954,35 @@ body {
     .convert-btn {
         font-size: 0.8rem;
         padding: 10px 12px;
+=======
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .upload-section, .output-section {
+        padding: 20px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
     }
     
     .output-header {
         flex-direction: column;
+<<<<<<< HEAD
         gap: 10px;
+=======
+        gap: 16px;
+>>>>>>> d5b6ce2b3c297ada5c552b8a218c772031fb7bf8
         align-items: stretch;
     }
     
