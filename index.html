@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel 转 Markdown 工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Excel 转 Markdown 工具</h1>
+            <p>支持单个或批量转换 Excel (.xlsx, .xls) 文件为 Markdown 格式</p>
+        </header>
+        
+        <div class="upload-section">
+            <div class="file-input-wrapper">
+                <input type="file" id="excelFile" accept=".xlsx, .xls" multiple>
+                <label for="excelFile" class="file-input-label">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7,10 12,15 17,10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>选择 Excel 文件</span>
+                    <small>支持多文件选择</small>
+                </label>
+            </div>
+            <div class="file-list" id="fileList"></div>
+            <div class="convert-options">
+                <button id="mergeExcelBtn" class="convert-btn" disabled title="需要上传至少2个Excel文件">合并Excel后转换</button>
+                <button id="selectColumnsBtn" class="convert-btn" disabled title="需要上传1个Excel文件">选择列后转换</button>
+                <button id="mergeToCsvBtn" class="convert-btn" disabled title="需要上传至少2个Excel文件">合并Excel后转换为CSV</button>
+                <button id="convertBtn" class="convert-btn" disabled title="需要上传至少1个Excel文件">开始转换</button>
+            </div>
+        </div>
+        
+        <div class="column-selector" id="columnSelector" style="display: none;">
+            <h3>选择要保留的列</h3>
+            <div class="column-options">
+                <div class="select-all-container">
+                    <label>
+                        <input type="checkbox" id="selectAllColumns" checked>
+                        <span>全选/取消全选</span>
+                    </label>
+                </div>
+                <div id="columnList" class="column-list"></div>
+            </div>
+            <div class="column-actions">
+                <button id="applyColumnFilter">应用列筛选</button>
+                <button id="cancelColumnFilter">取消</button>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <div class="output-header">
+                <h2>转换结果</h2>
+                <div class="action-buttons">
+                    <button id="copyBtn" class="action-btn copy-btn" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        复制
+                    </button>
+                    <button id="exportBtn" class="action-btn export-btn" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-15"></path>
+                            <path d="M7 10l5 5 5-5"></path>
+                            <path d="M12 15V3"></path>
+                        </svg>
+                        导出
+                    </button>
+                </div>
+            </div>
+            <textarea id="markdownOutput" rows="20" readonly placeholder="转换后的 Markdown 将显示在此处..."></textarea>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
